@@ -28,7 +28,7 @@ for (int i = 0; i < 5; i++)
     Thread.Sleep(500);
     Console.Write(". \n\n");
     Thread.Sleep(2000);
-    Console.WriteLine($"Kanye says, '{kanyeQuote}\n");
+    Console.WriteLine($"Kanye says, '{kanyeQuote}'\n");
     Thread.Sleep(2000);
     Console.WriteLine("Bye Kanye..\n");
 }
