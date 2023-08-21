@@ -42,4 +42,5 @@ var apiKeyObj = File.ReadAllText("appsettings.json");
 //Get the api key from the appsettings file using the key "apiKey"
 var apiKey = JObject.Parse(apiKeyObj).GetValue("apiKey").ToString();
 
-Console.WriteLine(apiKey);
+//Build the api url using the provided zip and api key
+var apiURL = $"https://api.openweathermap.org/data/2.5/weather?zip=35091&appid={apiKey}";
